@@ -54,15 +54,15 @@ const About = () => {
           <VerticalTimeline>
             {experiences.map((experience) => (
               <VerticalTimelineElement
-                key={experience.title}
+                key={experience.date}
                 date={experience.date}
                 icon={
                   <div className="flex justify-center items-center w-full h-full">
-                    <img
+                    {/* <img
                       src={experience.icon}
                       alt={experience.company_name}
                       className="w-[60%] h-[60%] object-contain"
-                    />
+                    /> */}
                   </div>
                 }
                 iconStyle={{ background: experience.iconBg }}
@@ -74,7 +74,7 @@ const About = () => {
                 }}
               >
                 <div>
-                  <h3 className="text-black text-cl font-popins font-semibold">
+                  <h3 className="text-black text-xl font-popins font-semibold">
                     {experience.title}
                   </h3>
                   <p
